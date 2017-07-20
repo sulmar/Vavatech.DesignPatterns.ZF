@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C919ADC6-2427-455A-91F8-667A3C6DD5A9}</ProjectGuid>
+    <ProjectGuid>{7B141590-ED19-45B5-B233-5C2E8D4254EF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ZF.DesignPatterns.SOLID.ISP</RootNamespace>
-    <AssemblyName>ZF.DesignPatterns.SOLID.ISP</AssemblyName>
+    <RootNamespace>ZF.DesignPatterns.TemplateMethodDemo</RootNamespace>
+    <AssemblyName>ZF.DesignPatterns.TemplateMethodDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Drill.cs" />
-    <Compile Include="IDevice.cs" />
-    <Compile Include="Machine.cs" />
+    <Compile Include="Calculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Welder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

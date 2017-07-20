@@ -10,6 +10,11 @@ namespace ZF.DesignPatterns.SOLID.ISP
     {
         static void Main(string[] args)
         {
+            var machine = new Machine(new Drill(), new Welder());
+
+            machine.Run();
+
+
         }
     }
 }
