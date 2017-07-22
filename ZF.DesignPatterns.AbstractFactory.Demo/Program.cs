@@ -80,6 +80,13 @@ namespace ZF.DesignPatterns.AbstractFactory.Demo
         }
         private void Parse(string s)
         {
+            if (string.IsNullOrEmpty(s))
+            {
+                throw new ArgumentNullException(nameof(s));
+            }
+
+
+
             var tokens = s.Split(' ');
 
             foreach (var token in tokens)
