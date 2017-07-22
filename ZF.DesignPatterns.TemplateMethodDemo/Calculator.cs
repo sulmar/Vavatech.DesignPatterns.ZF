@@ -16,6 +16,9 @@ namespace ZF.DesignPatterns.TemplateMethodDemo
 
         public decimal Calculate(decimal amount)
         {
+            if (amount <= 0 || amount > 100000)
+                throw new ArgumentOutOfRangeException(nameof(amount));
+
             if (CanDiscount(amount))
             {
                 amount = amount - Discount(amount);
