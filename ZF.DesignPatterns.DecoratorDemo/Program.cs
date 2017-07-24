@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +18,47 @@ namespace ZF.DesignPatterns.DecoratorDemo
 					   new ScrollDecorator(
 						 new TextField(80, 24))));
 	        widget.Draw();
+
+
+            // Przykład użycia wzorca dekoratora przy obsłudze strumieni 
+
+            Compress("test.txt", "Hello World!");
+
+            Console.WriteLine(Decompress("test.txt"));
         }
+
+
+
+        private static void Compress(string filename, string content)
+        {
+            var stream = new GZipStream(new FileStream(filename, FileMode.Create), CompressionMode.Compress);
+
+            byte[] bytes = System.Text.Encoding.ASCII.GetBytes(content);
+
+            stream.Write(bytes, 0, bytes.Length);
+
+            stream.Close();
+        }
+
+        private static string Decompress(string filename)
+        {
+            var stream = new GZipStream(new FileStream(filename, FileMode.Open), CompressionMode.Decompress);
+
+            byte[] bytes = new byte[100];
+
+            stream.Read(bytes, 0, bytes.Length);
+
+            stream.Close();
+
+            var content = System.Text.Encoding.ASCII.GetString(bytes);
+
+            return content;
+        }
+
+
     }
+
+   
 
 
     interface Widget
