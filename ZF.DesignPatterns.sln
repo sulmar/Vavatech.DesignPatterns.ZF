@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.AdapterDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.DecoratorDemo", "ZF.DesignPatterns.DecoratorDemo\ZF.DesignPatterns.DecoratorDemo.csproj", "{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.BridgeDemo", "ZF.DesignPatterns.BridgeDemo\ZF.DesignPatterns.BridgeDemo.csproj", "{003D20E7-1986-43CF-A327-23C1B9DBEC99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003D20E7-1986-43CF-A327-23C1B9DBEC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003D20E7-1986-43CF-A327-23C1B9DBEC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003D20E7-1986-43CF-A327-23C1B9DBEC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003D20E7-1986-43CF-A327-23C1B9DBEC99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
