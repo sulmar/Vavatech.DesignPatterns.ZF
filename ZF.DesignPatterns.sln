@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.BridgeDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.ProxyDemo", "ZF.DesignPatterns.ProxyDemo\ZF.DesignPatterns.ProxyDemo.csproj", "{60513624-9390-430A-9BF2-C99343C3181E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.FacadeDemo", "ZF.DesignPatterns.FacadeDemo\ZF.DesignPatterns.FacadeDemo.csproj", "{0EFCEAA8-C717-41C4-9503-7EF5875456DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{60513624-9390-430A-9BF2-C99343C3181E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60513624-9390-430A-9BF2-C99343C3181E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60513624-9390-430A-9BF2-C99343C3181E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFCEAA8-C717-41C4-9503-7EF5875456DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFCEAA8-C717-41C4-9503-7EF5875456DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFCEAA8-C717-41C4-9503-7EF5875456DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFCEAA8-C717-41C4-9503-7EF5875456DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
