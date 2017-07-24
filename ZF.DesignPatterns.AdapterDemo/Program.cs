@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-// Wzorzec projektowy Adapter jest wzorcem czynnościowym.
+// Wzorzec projektowy Adapter jest wzorcem strukturalnym.
 
 // Jego zadaniem jest dostosowanie niekombatybilnej klasy do naszego kodu 
 // Przykład zastosowania: 
