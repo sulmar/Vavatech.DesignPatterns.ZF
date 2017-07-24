@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.FluentApi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.AdapterDemo", "ZF.DesignPatterns.AdapterDemo\ZF.DesignPatterns.AdapterDemo.csproj", "{3114F315-37B2-45CE-8171-E9591464B831}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZF.DesignPatterns.DecoratorDemo", "ZF.DesignPatterns.DecoratorDemo\ZF.DesignPatterns.DecoratorDemo.csproj", "{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{3114F315-37B2-45CE-8171-E9591464B831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3114F315-37B2-45CE-8171-E9591464B831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3114F315-37B2-45CE-8171-E9591464B831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBF8EDE-1DB3-4658-BD6B-F0616B53A87D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
