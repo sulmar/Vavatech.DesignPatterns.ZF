@@ -4,6 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// Wzorzec projektowy Adapter jest wzorcem czynnościowym.
+
+// Jego zadaniem jest dostosowanie niekombatybilnej klasy do naszego kodu 
+// Przykład zastosowania: 
+// Wywołanie obcej biblioteki bez dostępu do kodu źródłowego
+
+// Adapter składa się z następujących elementów:
+// - Target: abstrakcyjny interfejs docelowej klasy
+// - Adapter: klasa, która "opakowuje" adaptowaną klasę
+// - Adaptee: adoptowana klasa
+
+// Klasa Adapter implementuje abstrakcyjny interfejs Target.
+// Adapter przechowuje obiekt docelowej klasy Adaptee i wywołuje konkretne jej metody.
+// Dzięki temu z punktu widzenia klienta ukrywamy szczegóły implementacji.
+
+
 namespace ZF.DesignPatterns.AdapterDemo
 {
     class Program
@@ -11,44 +28,42 @@ namespace ZF.DesignPatterns.AdapterDemo
         static void Main(string[] args)
         {
 
-            IConverter<PersonDTO, Person> converter = new PersonConverter();
-
-            var personDTO = new PersonDTO { Imie = "Marcin", Nazwisko = "Sulecki" };
-
-            var person = converter.Convert(personDTO);
-
+            ITarget device = new DeviceAdapter();
+            device.Request();
         }
     }
 
-    interface IConverter<TItem, TResult>
-    {
-        TResult Convert(TItem item);
 
+    // Target
+    public interface ITarget
+    {
+        void Request();
     }
 
-    class PersonConverter : IConverter<PersonDTO, Person>
+    // Adaptee
+    public class ConcreteDevice
     {
-        public Person Convert(PersonDTO item)
+        public void SpecificRequest()
         {
-            return new Person
-            {
-                FirstName = item.Imie,
-                LastName = item.Nazwisko
-            };
+            Console.WriteLine("Specific Request");
         }
     }
 
-    class Person
+    // Adapter
+    public class DeviceAdapter : ITarget
     {
-        public string FirstName { get; set; }
+        private ConcreteDevice m_concreteDevice;
 
-        public string LastName { get; set; }
+        public DeviceAdapter()
+        {
+            m_concreteDevice = new ConcreteDevice();
+        }
+
+        public void Request()
+        {
+            m_concreteDevice.SpecificRequest();
+        }
     }
 
-    class PersonDTO
-    {
-        public string Imie { get; set; }
 
-        public string Nazwisko { get; set; }
-    }
 }
